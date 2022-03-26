@@ -1,13 +1,14 @@
 # BBoxx Lithium-Ion Battery Field Data Challenge
 Data from off-grid Lithium-Ion Batteries in combination with solar panels operating in sub-Saharan Africa was analyzed as part of the [2022 BatteryDEV Hackathon](https://github.com/BatteryDEV/Field-Data-Challenge-Template-Public).
 
-This repository provides the notebooks that were used to generate the results that are detailed in the [final report](https://github.com/EliasGaliounas/BatteryDevBBoxx/blob/main/Report.pdf).
+This repository provides the notebooks that were used to generate the results that are detailed in the [final report](https://github.com/BatteryDEV/dev22-team-eemnv/blob/main/README.md).
 
 ## Installation
 To get started clone this repository and install the required packages.
 
 ```sh
-$ git clone https://github.com/EliasGaliounas/BatteryDevBBoxx
+$ git clone https://github.com/BatteryDEV/dev22-team-eemnv.git
+$ set up the anaconda environment provided in the environment folder
 $ pip3 install -r requirements.txt
 ```
 
@@ -20,7 +21,8 @@ $ pip3 install -r requirements.txt
 <img src="images/dashboard_snip.png"/>
 
 ## Details
-All the code used for the competition is located in the [notebooks](https://github.com/EliasGaliounas/BatteryDevBBoxx/tree/main/notebooks) folder
+All the code used for the competition is located in the [notebooks](https://github.com/BatteryDEV/dev22-team-eemnv/tree/main/notebooks) folder.
+All notebooks should be self-sufficient, and each one will read its own data.
 - The *cleaned_data* folder contains transfomred data used for some visualizations.
 - The *plot_functions* folder contains all the graphical fucntions called by the dashboard during execution.
 - The *Clustering-by-power-time-of-day-maps.ipynb* notebook was used to do some exploration, notably with PCA algorithms, which are detailed in the report.
