@@ -27,5 +27,6 @@ def plot(field, n_batteries, df):
     df_median = subset.groupby(['battery_id'] + freq_group_by).agg(agg_method)
     df_plot = df_median.reset_index().set_index(freq_group_by)#[[field]].unstack(level = 0).sort_index()
     df_plot.index = df_plot.index.map('{0[0]}H{0[1]}'.format) 
-    fig = px.line(df_plot, y = field, color = 'battery_id')
+    fig = px.line(df_plot, y = field, color = 'battery_id', title = f'Median {field} profile')
+    fig.update_layout(title_x = 0.5, plot_bgcolor = '#d2d9d7', showlegend=False)
     return fig
