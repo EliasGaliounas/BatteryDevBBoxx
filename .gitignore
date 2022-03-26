@@ -3,7 +3,6 @@
 
 # Custom for the BatteryDEV hackathon
 .data/*
-.images/*
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
